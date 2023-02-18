@@ -7,7 +7,8 @@ This project will init a Symfony project with Docker
 - Make
 
 ## Installation
-- Replace all word `symfony_docker` by your project name
-- `make .env.local`
-- Edit your `.env.local`
-- `make install` or `make reset` :)
+- Replace all word ``symfony_docker`` by your project name
+- Edit variable ``PROJECT_PORT`` port in ``.env``
+- ``make .env.local``
+- Edit your ``.env.local``
+- ``make install`` or ``make reset`` :)
