@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.3-fpm
 
 RUN  apt-get update --fix-missing
 RUN  apt-get install -y --no-install-recommends apt-utils vim curl debconf subversion git apt-transport-https

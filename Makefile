@@ -15,7 +15,6 @@ SYMFONY         = $(EXEC_PHP) bin/console
 COMPOSER        = $(EXEC_PHP) composer
 YARN            = $(EXEC_JS) yarn
 NPM				= $(EXEC_JS) npm
-EXEC_CURL		= curl -X POST -H 'Content-type: application/json' https://hooks.slack.com/services/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 --data
 
 ##
 ## Project
@@ -31,7 +30,7 @@ kill:
 	$(DOCKER_COMPOSE) down --volumes --remove-orphans
 
 install: ## Install and start the project
-install: .env.local network build start vendor dump_env_dev assets success
+install: .env.local network build start vendor assets success
 
 network: ## Create network for project
 	docker network create $(PROJECT_NAME)_network || true
